@@ -21,3 +21,13 @@ dotnet sln 002-multiApp/002-multiApp.sln add 002-multiApp/Lib1/Lib1.csproj 002-m
 dotnet add 002-multiApp/App2/App2.csproj reference 002-multiApp/Lib1/Lib1.csproj
 
 dotnet run --project 002-multiApp/App2
+
+### 002 - add logging
+
+dotnet add  002-multiApp/Lib1/ package Serilog
+
+dotnet add  002-multiApp/App2/ package Serilog.Sinks.Console
+
+dotnet add  002-multiApp/App2/ package Serilog.Sinks.File
+
+dotnet list 002-multiApp package
