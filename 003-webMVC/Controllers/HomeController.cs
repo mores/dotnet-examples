@@ -20,11 +20,15 @@ namespace _003_webMVC.Controllers
 
         public IActionResult Index()
         {
+	    string message = $"Index page visited at {DateTime.UtcNow.ToLongTimeString()}";
+	    _logger.LogInformation(message);
             return View();
         }
 
         public IActionResult Privacy()
         {
+	    string message = $"Privacy page visited at {DateTime.UtcNow.ToLongTimeString()}";
+            _logger.LogInformation(message);
             return View();
         }
 
