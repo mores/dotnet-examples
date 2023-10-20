@@ -33,3 +33,9 @@ dotnet add  002-multiApp/App2/ package Serilog.Sinks.Console
 dotnet add  002-multiApp/App2/ package Serilog.Sinks.File
 
 dotnet list 002-multiApp package
+
+
+### 004
+dotnet new classlib --output 004-calculate
+
+dotnet build 004-calculate
