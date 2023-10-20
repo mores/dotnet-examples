@@ -1,5 +1,7 @@
 # dotnet-examples
 
+On ubuntu - sudo snap install dotnet-sdk
+
 dotnet new gitignore
 
 ## 001
